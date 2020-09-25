@@ -16,7 +16,7 @@ puts " Digite tres valores : "
 
 # ------------------------------------------------------------------------------------------------------------------------------------
 
-# Crie uma instryção que selciona o amior valor deste hash. - 05
+# Crie uma instrução que selciona o amior valor deste hash. - 05
 
 
 V. LowLight
@@ -37,4 +37,24 @@ end
 num.each do |key, value|
 	print "\nA chave é #{key} e o valor é #{value}"
 end
+
+# ------------------------------------------------------------------------------------------------------------------------------------
+
+# crie um programa que possuaum método que resolva a potência dado um número base e se expoente.
+
+puts 'POTÊNCIA'
+puts 'Informe os valores[x^y]: '
+n1 = gets.chomp.to_i
+n2 = gets.chomp.to_i
+
+def pow num, exp
+    res = num
+    con = exp-1
+
+    con.times do
+        res = num*res
+    end  
+    res
+end 
+
 
