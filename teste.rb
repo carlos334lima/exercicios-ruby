@@ -1,7 +1,24 @@
-require 'cpf_cnpj'
+class Esportista
+    def competir
+        puts 'Participando de uma competição'
+    end 
+end
 
-puts " Digite o seu cpf: "
+class JogadorDeFutebol < Esportista
+    def correr
+        puts 'Correndo atrás da bola'
+    end 
+end
 
-validacao = CPF.?gets.chomp
+class Maratonista < Esportista
+    def correr
+        puts 'Percorrendo o circuito'
+    end 
+end
 
-puts Validacao? 'valido!': 'inválido' 
+soccer = JogadorDeFutebol.new
+
+corredor = Maratonista.new
+
+
+corredor.competir
